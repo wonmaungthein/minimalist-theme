@@ -67,7 +67,7 @@ add_action( 'widgets_init', 'minimalist_theme_widgets_init' );
 function minimalist_theme_scripts() {
 	wp_enqueue_style( 'minimalist-theme-style', get_stylesheet_uri(), array(), filemtime( get_template_directory_uri() . '/style.css' ) );
 
-	wp_enqueue_script( 'minimalist-theme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), filemtime( get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js' ), true );
-	wp_enqueue_script( 'minimalist-theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), filemtime( get_template_directory_uri() . '/assets/js/navigation.js' ), true );
+	wp_enqueue_script( 'minimalist-theme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'minimalist-theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'minimalist_theme_scripts' );
