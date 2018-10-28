@@ -23,6 +23,14 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
+	<?php
+// Prints the day
+// echo date("l") . "<br>";
+
+// Prints the day, date, month, year, time, AM or PM
+echo date("l, jS \of F, Y, h:i:s A ");
+
+?>
 
 	<?php the_post_thumbnail(); ?>
 
